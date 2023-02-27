@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Registration</title>
+</head>
+<body>
+    <h1>Race Registration!</h1>
+        <form action="/register">
+        <div>
+            <label for="firstname">First Name</label>
+            <input id="firstname" Required type="text" name="firstname">
+            <label for="lastname">Last Name</label>
+            <input id="lastname" Required type="text" name="lastname">
+        </div>
+<div>
+    <h3>Select a Race:</h3>
+</div>
+        <div>
+            <label for="funrun">5K Fun Run</label>
+            <input type="radio" id="funrun" name="selectedrace" value="5K">
+            <br>
+            <label for="halfmarathon">Half Marathon</label>
+            <input type="radio" id="halfmarathon" name="selectedrace" value="halfmarathon">
+            <br>
+            <label for="fullmarathon">Full Marathon</label>
+            <input type="radio" id="fullmarathon" name="selectedrace" value="fullmarathon">
+        </div>
+<div>
+    <label for="email">Email</label>
+    <input id="email" type="Email" required name="email">
+    <label for="password">Password</label>
+    <input type="text" id="password" required name="password"
+        minlength="8">
+</div>
+<div>
+    <label for="agegroup">Select an Age Group:</label>
+    <select name="agegroup" id="agegroup">
+        <option value="">Please--choose-one</option>
+        <option value="young">im young</option>
+        <option value="old">im old af</option>
+        <option value="nope">fug you</option>
+    </select>
+</div>
+<div>
+<button>Submit!</button>
+</div>     
+</form>
+</body>
+</html>
